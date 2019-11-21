@@ -34,7 +34,7 @@ export default {
       this.disabled = true;
       setTimeout(() =>{ 
         this.disabled = false;
-      }, 1300)
+      }, 2000)
     }
   },
   methods:{
