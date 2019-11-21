@@ -2,7 +2,7 @@
   <div id="app">
     <VButton class="desintegrate-button" ref="button" @onClick="message"/>
 
-    <button class="toggle-button" :class="{ disabled: disabled }" @click="onCallState">{{ text }}</button>
+    <button class="toggle-button" :disabled="disabled" :class="{ disabled: disabled }" @click="onCallState">{{ text }}</button>
   </div>
 </template>
 
@@ -85,6 +85,7 @@ export default {
     border: none;
     opacity: .7;
     color: #fff;
+    pointer-events: none;
   }
 }
 
